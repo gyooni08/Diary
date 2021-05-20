@@ -1,0 +1,15 @@
+<div style="text-align:center;">
+
+  <form action="{% url 'create'%}" method="post">
+  {%csrf_token%}
+    <h3>제목</h3>
+    <input type="text" name="title">
+    <!-- <p>작성자: <input type="text" name="writer"></p> -->
+    <h3>본문</h3>
+    <textarea name="body" id="" cols="50" rows="25"></textarea>
+    <br><br>
+    <button type="submit">제출하기</button>
+    <br><br>
+    <a href="{% url 'home'%}">목차로 돌아가기🐱‍👤</a>
+  </form>
+</div>
